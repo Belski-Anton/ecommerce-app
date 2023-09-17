@@ -14,4 +14,16 @@ export interface IUserData {
   addresses?: IAddress[];
   defaultShippingAddress?: number;
   defaultBillingAddress?: number;
+  anonymousCartId: string;
+}
+
+export interface IDeveloper {
+  name: string;
+  text: string;
+  image: string;
+  git: string;
+}
+
+export interface IDeveloperProps {
+  developer: IDeveloper;
 }
